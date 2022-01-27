@@ -1,0 +1,121 @@
+@import "style-none.scss";
+
+
+$scren-lm:375px;
+$scren-sm: 650px;
+$scren-md: 768px;
+$scren-lg: 992px;
+$scren-xl: 1200px;
+
+
+$scren-lm-max:649px;
+$scren-sm-max: 767px;
+$scren-md-max: 991px;
+$scren-lg-max: 1199px;
+
+.outer{
+    padding: 30px 20px 0 20px;
+}
+
+.inner{
+   max-width: 1200px;
+   margin: 0 auto;
+  
+}
+
+.desktop{
+
+    &_title{
+        font-size: 22px;
+        font-weight: 700;
+    }
+    &_table{
+        
+        table{
+            width: 50%;
+            font-size: 16px;
+            .desktop_table_title{
+                font-size: 18px;
+                font-weight: 700;
+            }
+
+            td{
+                padding: 10px 0 5px 0;
+
+               
+            }
+        }
+    }
+
+    @media (max-width: $scren-sm-max){
+       display: none;
+        
+    }
+}
+
+
+
+
+
+
+.mobile{
+    .mobile_date{
+        padding: 10px 0;
+        font-size: 16px;
+        font-weight: 700;
+        @media (max-width: $scren-lm-max){
+          
+            font-size: 14px;
+        }
+
+    }
+   
+   &_title{
+    font-size: 20px;
+    font-weight: 700;
+    @media (max-width: $scren-lm-max){
+        width: 50%;
+        font-size: 18px;
+         
+     }
+   }
+
+.mobile_table{
+    
+    display: table;
+    
+    .modile_table_cell{
+        display: table-cell;
+        padding: 10px 25px 5px 0;
+
+        @media (max-width: $scren-sm-max){
+            width: 30%;
+            font-size: 14px;
+             
+         }
+
+         @media (max-width: $scren-lm-max){
+            width: 50%;
+            font-size: 12px;
+         }
+
+        
+    }
+
+    .modile_table_row{
+        display: table-row;
+
+          
+        
+}
+ 
+}
+   
+@media (min-width: $scren-md){
+    display: none;
+     
+ }
+}
+
+
+
